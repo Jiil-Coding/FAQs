@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background: hsl(240, 73%, 65%);
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+.container .image{
+    width: 45%;
+}
+.container .image img{
+    width: 100%;
+}
+.container .quetion{
+    width: 45%
+}
+.container .quetion .faq{
+    font-size: 4em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.container .quetion li{
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+.container .quetion li:hover{
+    color: hsl(14, 88%, 65%);
+}
+.container .quetion .quetions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    align-items: center;
+}
+.container .quetion .text-hidden{
+    color: hsl(237,12%,33%);
+    display: none;
+}
+.container .quetion p{
+    color: hsl(237,12%,33%);
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1204px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .image{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .container .quetion{
+        width: 100%;
+    }
+}
